@@ -27,4 +27,5 @@ int main() {
 
   cout << "Solution: " << sum << endl;
 
+  return 0;
 }
