@@ -17,8 +17,11 @@ void fibonacci(int *fib, int numTerms, int count) {
 int main() {
 
   const int numTerms = 32;
+  // Initialize the array with the firs 2 terms.
   int fib[numTerms] = {1,2,0};
   int sum = 0;
+
+  // Arrays in C++, start with 0
   fibonacci(fib, numTerms, 2);
 
   for(int i = 1; i <= numTerms; i+=3) {
