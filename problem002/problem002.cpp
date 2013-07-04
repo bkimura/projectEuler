@@ -17,7 +17,7 @@ void fibonacci(int *fib, int numTerms, int count) {
 int main() {
 
   const int numTerms = 32;
-  // Initialize the array with the firs 2 terms.
+  // Initialize the array with the first 2 terms.
   int fib[numTerms] = {1,2,0};
   int sum = 0;
 
