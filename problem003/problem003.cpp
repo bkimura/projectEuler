@@ -32,7 +32,11 @@ long factorTree(long num, long fact) {
 
 int main() {
 
-  long num = 600851475143, fact = 2;
+  long num = 1904, fact = 2;
+  cout << "Test Case: Multiples of a prime factor" << endl;
+  cout << "Solution: " << factorTree(num, fact) << endl << endl;
+
+  num = 600851475143;
   cout << "Solution: " << factorTree(num, fact) << endl;
   return 0;
 
