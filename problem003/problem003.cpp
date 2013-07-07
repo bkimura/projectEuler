@@ -3,8 +3,17 @@
 // 600851475143?
 
 #include <iostream>
+#include <cmath>
 
 using namespace std;
+
+/* 
+  Recursive function to dwindle the num down to
+  its' factors.
+*/
+int factorTree(int num, int fact) {
+  // 
+}
 
 int main() {
 
