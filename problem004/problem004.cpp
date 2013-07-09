@@ -14,16 +14,21 @@ bool isPalidrome(int num) {
     rev *= 10;
     temp /= 10;
   }
-  if(num = rev) {
+
+  rev /= 10;
+
+  if(num == rev) {
+    //cout << num << " " << rev << endl;
     return true;
   } else {
+    //cout << num << " " << rev << endl;
     return false;
   }
 }
 
 int main() {
   
-  int test = 1001;
+  int test = 10201;
   int fail = 11001;
 
   if(isPalidrome(test)) {
@@ -35,6 +40,15 @@ int main() {
     cout << fail << " is a palindrome." << endl;
   } else {
     cout << fail << " is NOT a palindrome." << endl;
+  }
+ 
+  for(int i = 999; i > 99; i--) {
+    for(int j = i; j > 99; j--) {
+      if(isPalidrome(i*j)) {
+        cout << i*j << " ";
+        break;
+      }
+    }
   }
 
   return 0;
