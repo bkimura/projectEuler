@@ -42,14 +42,29 @@ int main() {
     cout << fail << " is NOT a palindrome." << endl;
   }
  
+  int max = 0;
+  int count = 0;
+  bool found = false;
+  
   for(int i = 999; i > 99; i--) {
     for(int j = i; j > 99; j--) {
       if(isPalidrome(i*j)) {
-        cout << i*j << " ";
+        if(i*j>max) {
+          max = i*j;
+          found = true;
+        }
         break;
       }
     }
+    if(found == true) {
+      if(count > 5) {
+        break;
+      }
+      count++;
+    }
   }
+
+  cout << "Solution: " << max << endl;
 
   return 0;
 }
