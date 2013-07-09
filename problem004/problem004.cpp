@@ -7,12 +7,12 @@
 using namespace std;
 
 bool isPalidrome(int num) {
-  int temp = 0, rev = 0, add = 0;
+  int temp = num, rev = 0, add = 0;
   while(temp > 0) {
     add = temp % 10;
     rev += add;
     rev *= 10;
-    add /= 10;
+    temp /= 10;
   }
   if(num = rev) {
     return true;
