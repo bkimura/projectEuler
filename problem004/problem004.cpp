@@ -43,24 +43,22 @@ int main() {
   }
  
   int max = 0;
-  int count = 0;
+  int size = 99;
   bool found = false;
-  
-  for(int i = 999; i > 99; i--) {
-    for(int j = i; j > 99; j--) {
+
+  // The following for loops iterate through a multiplication table
+  //i = row
+  for(int i = 999; i > size; i--) {
+    //j = col
+    for(int j = i; j > size; j--) {
       if(isPalidrome(i*j)) {
         if(i*j>max) {
           max = i*j;
-          found = true;
+          //resize the boundries of the multiplication table.
+          size = j;
         }
         break;
       }
-    }
-    if(found == true) {
-      if(count > 1) {
-        break;
-      }
-      count++;
     }
   }
 
