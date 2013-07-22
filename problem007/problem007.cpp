@@ -15,11 +15,13 @@ int main() {
   while(n < 10001) {
     num++;
     for(int i = 2; i < num; i++) {
-
-      if((i%num) == 0) {
+      
+      // A prime number is only evenly
+      // divisible by 1 and itself
+      if((num%i) == 0) {
         break;
       } else if(i == (num - 1)) {
-        cout << "Prime found: " << num << endl;
+        // cout << "Prime found: " << num << endl;
         n++;
       }
 
